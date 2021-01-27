@@ -6,6 +6,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import Nav from "./components/Nav";
+import MovieDetail from "./pages/MovieDetail";
 // Router
 import { Switch, Route } from "react-router-dom";
 
@@ -17,7 +18,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={AboutUs} />
         <Route exact path="/work" component={OurWork} />
-        <Route exact path="/contact" component={ContactUs} />
+        <Route path="/work/:id" component={MovieDetail} />
+        <Route path="/contact" component={ContactUs} />
       </Switch>
     </div>
   );
