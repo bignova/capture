@@ -71,6 +71,9 @@ const Work = styled(motion.div)`
   overflow: hidden;
   padding: 5rem 10rem;
   background: #fff;
+  @media (max-width: 960px) {
+    padding: 2rem 2rem;
+  }
   h2 {
     padding: 1rem 0rem;
   }
